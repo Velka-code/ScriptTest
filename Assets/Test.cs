@@ -46,7 +46,7 @@ public class Test : MonoBehaviour
 
     void Start()
     {
-        /*
+        
         //配列arrayを宣言し、初期化
         int[] array = { 8, 6, 3, 4, 7 };
 
@@ -61,14 +61,15 @@ public class Test : MonoBehaviour
         {
             Debug.Log(array[i]);
         }
-        */
+        
 
-        int[] value = { 3, 10, 8, 1, 10, 7, 20, 23, 1, 3 , 40 , 50 };
+        int[] value = { 3, 10, 8, 1, 10, 7, 20, 23, 1, 3};
 
 
         Boss boss = new Boss();
 
-        for (int i = 0; i < value.Length; i++)
+        //配列によるチェックを廃止し、for文のみとした。
+        for (int i = 0; i < 11; i++)
         {
             int num = i + 1;
 
